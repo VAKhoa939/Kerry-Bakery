@@ -1,0 +1,134 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Container that splits the screen in half */
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Left side for the login form */
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+  }
+  
+  /* Right side for the image */
+  .right {
+    flex: 1;
+    background-image: url('/src/assets/LoginPage/BlueOtter.jpg'); /* Adjust path as needed */
+    background-size: contain; /* Makes the image fit within the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    max-width: 80%; /* Optional: makes the image container smaller */
+    margin-left: auto; /* Centers the image in the right half */
+  }
+  
+  /* Login form styling */
+  .login-form {
+    width: 80%;
+    max-width: 400px;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 1.5em;
+  }
+  
+  /* Input group styling */
+  .input-group {
+    margin-bottom: 1.5em;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 0.5em;
+  }
+  
+  .input-group .icon {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #6c63ff; /* Matching the purple color in the image */
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f2f0ff; /* Light purple background for input fields */
+    color: #333;
+  }
+  
+  .input-group input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Login button styling */
+  .login-button {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c63ff; /* Primary purple color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #5a54d4; /* Darker purple on hover */
+  }
+  
+  /* Register button styling */
+  .register-button {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000; /* Black color for the register button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #333; /* Darker black on hover */
+  }
+  
+  /* Additional spacing between buttons */
+  .login-button + .register-button {
+    margin-top: 0.5em;
+  }
+  
