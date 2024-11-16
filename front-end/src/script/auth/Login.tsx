@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../css/login.css"; // Adjusted import path
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [loginForm, setLoginForm] = useState({ username: "", password: "" });
@@ -53,7 +53,12 @@ const Login = () => {
             >
               Login now
             </button>
-            <button className="register-button">Register</button>
+            <button
+              className="register-button"
+              onClick={() => navigate("/register")}
+            >
+              Register{" "}
+            </button>
           </form>
         </div>
       </div>

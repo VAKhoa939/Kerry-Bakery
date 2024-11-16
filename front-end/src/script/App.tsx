@@ -15,15 +15,18 @@ function App() {
 export default App;
 */
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import Login from "./login/Login";
+import Login from "./auth/Login";
+import Home from "./home/Home";
+import Register from "./auth/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         {/* Redirect root path to /login */}
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
